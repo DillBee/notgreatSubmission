@@ -1,7 +1,11 @@
 const fs = require('fs');
 
 function inNew() {
-    fs.readFile('numbers.txt', 'utf8', (err, data) => {
+    fs.readFile('notgreatSubmission/numbers.txt', 'utf8', (err, data) => {
+        if (err) {
+            throw err;
+        }
+        console.log(data)
         var numarray = data.split(',')
         let inorder = false
 
