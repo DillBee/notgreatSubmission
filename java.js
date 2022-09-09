@@ -5,7 +5,7 @@ function inNew() {
         if (err) {
             throw err;
         }
-        console.log(data)
+        console.log("The list is ", data)
         var numarray = data.split(',')
         let inorder = false
 
@@ -14,7 +14,6 @@ function inNew() {
         while(!inorder){
             numarray = bubblesort(numarray)
             inorder = is_it_in_order(numarray)
-            console.log(numarray)
         }
             
         console.log("The numbers are in order.", numarray)
@@ -44,7 +43,6 @@ function removeDUPLICATS(array) {
         }
     }
     console.log("Dupes removed")
-    console.log(newarray)
     return newarray
 }
 
