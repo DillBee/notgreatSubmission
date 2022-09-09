@@ -12,7 +12,7 @@ function inNew() {
             inorder = is_it_in_order(numarray)
             console.log(numarray)
         }
-        
+            
         console.log("The numbers are in order.", numarray)
       });
 }
