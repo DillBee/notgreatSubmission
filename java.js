@@ -52,7 +52,6 @@ function removeDUPLICATS(array) {
 function is_it_in_order(array) {
     var comparitor = array[0]
     for (var i = 1; i < array.length; i++) {
-        console.log("Is ", array[i], " less then ", comparitor)
         if (parseInt(array[i]) < parseInt(comparitor)){
             return false
             }
